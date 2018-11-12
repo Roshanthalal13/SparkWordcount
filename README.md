@@ -26,10 +26,27 @@ Open you Command Prompt Window and then type the following line of code.
 
 When you type this line of code you shoud be able to see this in you screen: 
 
+![spark-shell](https://user-images.githubusercontent.com/42624428/48320775-da249400-e5e2-11e8-8a2d-a0e90c722a4d.PNG)
+
+
+
+
+
+
+
+
+
 
 
 Note: If you don't something similar to the screen or if you see any things that say 'Spark' command not found then it means you have not set your enviroment variable properly. See the image below to set your Enviroment variable.
 
+![systemvariable](https://user-images.githubusercontent.com/42624428/48320803-08a26f00-e5e3-11e8-81d3-76868c41a21c.PNG)
+
+
+
+
+
+![path](https://user-images.githubusercontent.com/42624428/48320813-1821b800-e5e3-11e8-8ff4-9a5e59f74c16.PNG)
 
 
 
@@ -50,6 +67,16 @@ Now type these multiple lines of code in your command prompt once you succeed St
 
 You should see this output after passing step 2.
 
+![step2output](https://user-images.githubusercontent.com/42624428/48320791-f45e7200-e5e2-11e8-9277-bc53e6892363.PNG)
+
+
+
+
+
+
+
+
+
 
 
 Note: Inside the Parenthesis (""), you have to put your '.txt' files location.
@@ -61,6 +88,13 @@ This line of code is seperating all those sentences by space and then filtering 
 ...
 
 You shoud get this once you pass the step 3.
+
+![step3output](https://user-images.githubusercontent.com/42624428/48320821-32f42c80-e5e3-11e8-963f-06de514231bf.PNG)
+
+
+
+
+
 
 
 ## Step 4
@@ -95,6 +129,7 @@ The most frequently used word here in this file is a character '-'. It was repea
 ## Histogram
 Using the data use collected from the Spark Word Count, I have creatd a Histogram.
 
+![chart](https://user-images.githubusercontent.com/42624428/48320763-c416d380-e5e2-11e8-9c4b-fc31e14374fd.PNG)
 
 
 
@@ -106,6 +141,11 @@ Using the data use collected from the Spark Word Count, I have creatd a Histogra
 
 
 ## Note
+
+![error](https://user-images.githubusercontent.com/42624428/48320820-24a61080-e5e3-11e8-9191-653b0f4fd03d.PNG)
+
+
+
 
 
 

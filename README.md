@@ -21,7 +21,11 @@ Note: I downloaded the movie script from the following link https://www.springfi
 Open you Command Prompt Window and then type the following line of code.
 ## Step 1:
 ...
+
+
 > spark-shell
+
+
 ...
 
 When you type this line of code you shoud be able to see this in you screen: 
@@ -62,7 +66,11 @@ After setting up the System Variable and Path, Start a new command prompt and th
 ## Step 2:
 Now type these multiple lines of code in your command prompt once you succeed Step 1.
 ...
+
+
 > val inputFile = sc.textFile("C:/44517/ConardSparkWordCount/AMSND.txt")
+
+
 ...
 
 You should see this output after passing step 2.
@@ -84,7 +92,11 @@ Note: Inside the Parenthesis (""), you have to put your '.txt' files location.
 ## Step 3:
 This line of code is seperating all those sentences by space and then filtering them and counting them.
 ...
+
+
 > val topWordCount = inputFile.flatMap(str=>str.split(" ")).filter(!_.isEmpty).map(word=>(word,1)).reduceByKey(_+_).map{case (word, count) => (count, word)}.sortByKey(false)
+
+
 ...
 
 You shoud get this once you pass the step 3.
@@ -100,8 +112,17 @@ You shoud get this once you pass the step 3.
 ## Step 4
 This line of command will list you top 10 most repeated words in your '.txt' file.
 ...
+
+
 >topWordCount.take(10).foreach(x=>println(x))
+
+
 ...
+
+
+
+
+
 
 
 ## Final Output

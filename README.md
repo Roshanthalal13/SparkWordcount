@@ -68,7 +68,7 @@ Now type these multiple lines of code in your command prompt once you succeed St
 ...
 
 
-> val inputFile = sc.textFile("C:/44517/ConardSparkWordCount/AMSND.txt")
+> val inputFile = sc.textFile("C:/44517/SparkWordcount/NightandDay.txt")
 
 
 ...
@@ -94,7 +94,7 @@ This line of code is seperating all those sentences by space and then filtering 
 ...
 
 
-> val topWordCount = inputFile.flatMap(str=>str.split(" ")).filter(!_.isEmpty).map(word=>(word,1)).reduceByKey(_+_).map{case (word, count) => (count, word)}.sortByKey(false)
+> val WordCount = inputFile.flatMap(str=>str.split(" ")).filter(!_.isEmpty).map(word=>(word,1)).reduceByKey(_+_).map{case (word, count) => (count, word)}.sortByKey(false)
 
 
 ...
@@ -114,7 +114,7 @@ This line of command will list you top 10 most repeated words in your '.txt' fil
 ...
 
 
->topWordCount.take(10).foreach(x=>println(x))
+>WordCount.take(10).foreach(x=>println(x))
 
 
 ...
